@@ -7,7 +7,7 @@ import sys
 
 def load_data(path="mnist.pkl.gz"):
     path = get_file(path, origin="https://s3.amazonaws.com/img-datasets/mnist.pkl.gz")
-
+    path="/home/jarbona/Downloads/mnist.pkl.gz"
     if path.endswith(".gz"):
         f = gzip.open(path, 'rb')
     else:
